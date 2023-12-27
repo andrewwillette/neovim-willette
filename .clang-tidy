@@ -1,4 +1,3 @@
-WarningsAsErrors: '*,-clang-diagnostic-unused-function'
 Checks: >
   Enable all warnings by default. This ensures we don't miss new and useful
   warnings when a new version of clang-tidy is dropped.
@@ -26,12 +25,10 @@ Checks: >
   Warnings that may be useful, but are too inconsistent to enable by default
   May yield useful results with some manual triaging,
   -bugprone-branch-clone,
-  -bugprone-macro-parentheses,
   -bugprone-sizeof-expression,
   -hicpp-multiway-paths-covered,
   -hicpp-signed-bitwise,
   -misc-unused-parameters,
-  -modernize-macro-to-enum,
   -readability-else-after-return,
   -readability-function-size,
   -readability-isolate-declaration,

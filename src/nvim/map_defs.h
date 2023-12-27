@@ -28,6 +28,16 @@ static inline uint32_t hash_String(String s)
   return h;
 }
 
+// added to test for clang-tidy unused-function, will not be merged
+static inline uint32_t testing_unused_function(String s)
+{
+  uint32_t h = 0;
+  for (size_t i = 0; i < s.size; i++) {
+    h = (h << 5) - h + (uint8_t)s.data[i];
+  }
+  return h;
+}
+
 static inline bool equal_String(String a, String b)
 {
   if (a.size != b.size) {

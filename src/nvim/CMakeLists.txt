@@ -804,12 +804,15 @@ else()
     os/pty_conpty_win.h
     os/os_win_console.h)
 endif()
-add_glob_target(
+message(STATUS "NVIM_SOURCES=${NVIM_SOURCES}")
+message(STATUS "NVIM_HEADERS=${NVIM_HEADERS}")
+add_glob_target_debug(
   TARGET lintc-clang-tidy
+  FLAGS -header-filter=.*
   COMMAND ${CLANG_TIDY_PRG}
-  FILES ${NVIM_SOURCES} ${NVIM_HEADERS}
-  FLAGS --quiet
-  EXCLUDE ${EXCLUDE_CLANG_TIDY})
+  FILES /Users/andrewwillette/git/neovim-willette/src/nvim/map_defs.h
+  EXCLUDE ${EXCLUDE_CLANG_TIDY}
+  )
 
 # These are the same warnings as https://neovim.io/doc/reports/clang/. The
 # checks we ignore are meant to be removed eventually, but we can only do so

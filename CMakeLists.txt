@@ -152,6 +152,7 @@ endif()
 option(ENABLE_ASAN_UBSAN "Enable Clang address & undefined behavior sanitizer for nvim binary." OFF)
 option(ENABLE_MSAN "Enable Clang memory sanitizer for nvim binary." OFF)
 option(ENABLE_TSAN "Enable Clang thread sanitizer for nvim binary." OFF)
+message(STATUS "we are setting asan_ubsan values to ${ENABLE_ASAN_UBSAN}")
 
 if((ENABLE_ASAN_UBSAN AND ENABLE_MSAN)
     OR (ENABLE_ASAN_UBSAN AND ENABLE_TSAN)
