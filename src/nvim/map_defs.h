@@ -168,12 +168,12 @@ KEY_DECLS(SignRange)
 /* MAP_DECLS(uint64_t, uint64_t) */
 
 /* trying to remove */
-/* MAP_DECLS(uint32_t, uint32_t) */
 /* MAP_DECLS(String, int) */
 /* MAP_DECLS(int, String) */
 /* MAP_DECLS(ColorKey, ColorItem) */
 
 /* for sure have to include */
+MAP_DECLS(uint32_t, uint32_t)
 MAP_DECLS(int, SignRange)
 MAP_DECLS(int64_t, ptr_t)
 MAP_DECLS(int, ptr_t)
