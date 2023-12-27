@@ -163,18 +163,18 @@ KEY_DECLS(HlEntry)
 KEY_DECLS(ColorKey)
 KEY_DECLS(SignRange)
 
-MAP_DECLS(int, int)
-MAP_DECLS(int, ptr_t)
-MAP_DECLS(cstr_t, ptr_t)
-MAP_DECLS(cstr_t, int)
-MAP_DECLS(ptr_t, ptr_t)
-MAP_DECLS(uint32_t, ptr_t)
-MAP_DECLS(uint64_t, ptr_t)
-MAP_DECLS(uint64_t, ssize_t)
-MAP_DECLS(uint64_t, uint64_t)
-MAP_DECLS(int64_t, int64_t)
-MAP_DECLS(int64_t, ptr_t)
-MAP_DECLS(uint32_t, uint32_t)
+/* MAP_DECLS(int, int) */
+/* MAP_DECLS(int, ptr_t) */
+/* MAP_DECLS(cstr_t, ptr_t) */
+/* MAP_DECLS(cstr_t, int) */
+/* MAP_DECLS(ptr_t, ptr_t) */
+/* MAP_DECLS(uint32_t, ptr_t) */
+/* MAP_DECLS(uint64_t, ptr_t) */
+/* MAP_DECLS(uint64_t, ssize_t) */
+/* MAP_DECLS(uint64_t, uint64_t) */
+/* MAP_DECLS(int64_t, int64_t) */
+/* MAP_DECLS(int64_t, ptr_t) */
+/* MAP_DECLS(uint32_t, uint32_t) */
 MAP_DECLS(String, int)
 MAP_DECLS(int, String)
 MAP_DECLS(ColorKey, ColorItem)
