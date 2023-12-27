@@ -168,23 +168,25 @@ KEY_DECLS(SignRange)
 /* MAP_DECLS(uint64_t, uint64_t) */
 
 /* trying to remove */
-/* MAP_DECLS(int64_t, int64_t) */
+/* MAP_DECLS(int64_t, ptr_t) */
+/* MAP_DECLS(uint32_t, uint32_t) */
+/* MAP_DECLS(String, int) */
+/* MAP_DECLS(int, String) */
+/* MAP_DECLS(ColorKey, ColorItem) */
+/* MAP_DECLS(int, SignRange) */
+
+/* build curr going */
 
 /* for sure have to include */
 MAP_DECLS(int, ptr_t)
 MAP_DECLS(uint64_t, ptr_t)
+MAP_DECLS(int64_t, int64_t)
 
 MAP_DECLS(uint32_t, ptr_t)
 MAP_DECLS(cstr_t, int)
 MAP_DECLS(int, int)
 MAP_DECLS(ptr_t, ptr_t)
-MAP_DECLS(int64_t, ptr_t)
-MAP_DECLS(uint32_t, uint32_t)
 MAP_DECLS(cstr_t, ptr_t)
-MAP_DECLS(String, int)
-MAP_DECLS(int, String)
-MAP_DECLS(ColorKey, ColorItem)
-MAP_DECLS(int, SignRange)
 
 #define set_has(T, set, key) set_has_##T(set, key)
 #define set_put(T, set, key) set_put_##T(set, key, NULL)
