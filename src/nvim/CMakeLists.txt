@@ -806,11 +806,10 @@ else()
 endif()
 message(STATUS "NVIM_SOURCES=${NVIM_SOURCES}")
 message(STATUS "NVIM_HEADERS=${NVIM_HEADERS}")
-add_glob_target_debug(
+add_glob_target(
   TARGET lintc-clang-tidy
-  FLAGS -header-filter=.*
   COMMAND ${CLANG_TIDY_PRG}
-  FILES /Users/andrewwillette/git/neovim-willette/src/nvim/map_defs.h
+  FILES ${NVIM_SOURCES} ${NVIM_HEADERS}
   EXCLUDE ${EXCLUDE_CLANG_TIDY}
   )
 
