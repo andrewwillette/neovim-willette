@@ -172,9 +172,9 @@ KEY_DECLS(SignRange)
 /* MAP_DECLS(String, int) */
 /* MAP_DECLS(int, String) */
 /* MAP_DECLS(ColorKey, ColorItem) */
-/* MAP_DECLS(int, SignRange) */
 
 /* for sure have to include */
+MAP_DECLS(int, SignRange)
 MAP_DECLS(int64_t, ptr_t)
 MAP_DECLS(int, ptr_t)
 MAP_DECLS(uint64_t, ptr_t)
