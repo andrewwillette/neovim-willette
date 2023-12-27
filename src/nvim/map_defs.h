@@ -164,11 +164,11 @@ KEY_DECLS(ColorKey)
 KEY_DECLS(SignRange)
 
 /* safe to remove */
-/* MAP_DECLS(uint64_t, uint64_t) */
 
 /* trying to remove */
 
 /* for sure have to include */
+MAP_DECLS(uint64_t, uint64_t)
 MAP_DECLS(uint64_t, ssize_t)
 MAP_DECLS(ColorKey, ColorItem)
 MAP_DECLS(int, String)
